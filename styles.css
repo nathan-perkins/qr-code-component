@@ -1,0 +1,70 @@
+:root {
+    --slate-900: #1f314f;
+    --slate-500: #68778d;
+    --slate-300: #d5e1ef;
+    --white: #ffffff;
+    --font-main: Outfit;
+    --font-weight-h1: 700;
+    --font-weight-p: 400;
+    --font-size-h1: 22px;
+    --font-size-p: 15px;
+    --line-height-h1: 120%;
+    --line-height-p: 140%;
+    --letter-spacing-h1: 0px;
+    --letter-spacing-p: 0.2px;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--slate-300);
+    font-family: var(--font-main), sans-serif;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+}
+
+.component {
+    width: 320px;
+    height: 499px;
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 65%;
+    border-radius: 12px;
+}
+
+h1, p {
+    margin: 24px 8px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--slate-900);
+    font-weight: var(--font-weight-h1);
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1);
+    letter-spacing: var(--letter-spacing-h1);
+}
+
+p {
+    color: var(--slate-500);
+    font-weight: var(--font-weight-p);
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    letter-spacing: var(--letter-spacing-p);
+    margin-top: -8px;
+}
